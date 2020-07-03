@@ -1,7 +1,8 @@
 $(document).ready(function() {
     var viewer = new OpenSeadragon({
         id: "view",
-        tileSources: "http://localhost:5000/CMU-1.tiff.dzi",
+        // tileSources: "http://localhost:5000/CMU-1.tiff.dzi",
+        tileSources: "http://52.15.54.74:5000/CMU-1.tiff.dzi",
         // tileSources: "http://localhost:5000/CD3_Wholeslide_Default_Extended.tif.dzi",
         prefixUrl: "assets/images/",
         showNavigator: true,
@@ -48,14 +49,15 @@ $(document).ready(function() {
          // viewer.world.resetItems();
          // viewer.remove();
          console.log(viewer);
-         viewer.open( "http://localhost:5000/"+optVal+".dzi");
+         // viewer.open( "http://localhost:5000/"+optVal+".dzi");
+         viewer.open( "http://52.15.54.74:5000/"+optVal+".dzi");
        }
        // alert(optVal);
     });
 
     $.ajax({
         type: "GET",
-        url: "http://localhost:5000/getfiles",
+        url: "http://52.15.54.74:5000/getfiles",
         contentType: false,
         processData: false,
         // data: formData,
