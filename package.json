@@ -16,7 +16,7 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "jquery": "^3.5.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "vue": "^2.5.18",
     "vue-chartjs": "^2.6.5",
     "vue-progressbar": "^0.7.5",
